@@ -4,6 +4,6 @@ import "fmt"
 
 func main() {
 
-	fmt.Println("Привет, Golang")
+	fmt.Println("Привет, Go")
 
 }
