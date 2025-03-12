@@ -1,10 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 func main() {
 
-	fmt.Println("Привет, Всем")
-	fmt.Println("Привет, Go")
+	n := 0
+	fmt.Println("Введите целое число: ")
+	_, err := fmt.Scan(&n)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("Вы ввели число: ,", n)
 
 }
